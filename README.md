@@ -1,1 +1,2 @@
-# 5element-old-C--project
+# 5element-old-C#-project
+Первый онлайн магазин написанный мною по средствам языка C#
