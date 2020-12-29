@@ -1,0 +1,110 @@
+﻿<Page x:Class="LAB33_KPIAP.Pages.Showcase.ExampleRefrigirators"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LAB33_KPIAP.Pages.Showcase"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="1000"
+      Title="ExampleRefrigirators">
+    <FlowDocumentScrollViewer>
+        <FlowDocument Background="White">
+            <Paragraph>
+                <TextBlock Height="213" Width="962">
+                    <Image x:Name="ExampleRefrigirator1" Height="195" Width="287" ></Image>
+                    <StackPanel Height="200" RenderTransformOrigin="0.5,0.5" Width="186">
+                         <TextBlock x:Name="NameExampleRefrigirator1" Height="52" FontSize="24"  Text="Название"/>
+                         <TextBlock x:Name="CodeExampleRefrigirator1" Height="30" FontSize="14"  Text="Код"/> 
+                         <TextBlock x:Name="CamersExampleRefrigirator1" Height="18" FontSize="14"  Text="Количество камер"/> 
+                         <TextBlock x:Name="ZoneExampleRefrigirator1" Height="18" FontSize="14"  Text="Зона свежести"/> 
+                         <TextBlock x:Name="ColorExampleRefrigirator1" Height="18" FontSize="14"  Text="Цвет "/>
+                         <TextBlock x:Name="RazmorozExampleRefrigirator1" Height="18" FontSize="14"  Text="Размораживание камеры"/> 
+                        <TextBlock x:Name="HeightExampleRefrigirator1" Height="18" FontSize="14"  Text="Высота "/> 
+                        
+                    </StackPanel>
+                    <StackPanel Height="199" RenderTransformOrigin="0.5,0.5" Width="335">
+                        <TextBlock x:Name="NameExampleRefrigirator1Y" Height="52" FontSize="34"  Text="12"/>
+                        <TextBlock x:Name="CodeExampleRefrigirator1Y" Height="30" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="LinExampleRefrigirator1Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="ZoneExampleRefrigirator1Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="ColorExampleRefrigirator1Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="RazmorozExampleRefrigirator1Y" Height="18" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="TechnologyExampleRefrigirator1Y" Height="18" FontSize="14" Text="12" /> 
+                        
+                    </StackPanel>
+                    <StackPanel Height="192" RenderTransformOrigin="0.5,0.5" Width="126">
+                        <Button x:Name="BuyExampleRefrigirator1" Height="62">
+                            <Button.Background>
+                                 <ImageBrush ImageSource="/Images/Korzina.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                </TextBlock>
+            </Paragraph>
+            <Paragraph>
+                <TextBlock Height="213" Width="962">
+                    <Image  x:Name="ExampleRefrigirator2" Height="195" Width="287" ></Image>
+                    <StackPanel Height="200" RenderTransformOrigin="0.5,0.5" Width="186">
+                         <TextBlock x:Name="NameExampleRefrigirator2" Height="52" FontSize="24"  Text="Название"/>
+                         <TextBlock x:Name="CodeExampleRefrigirator2" Height="30" FontSize="14"  Text="Код"/> 
+                          <TextBlock x:Name="CamersExampleRefrigirator2" Height="18" FontSize="14"  Text="Количество камер"/> 
+                         <TextBlock x:Name="ZoneExampleRefrigirator2" Height="18" FontSize="14"  Text="Зона свежести"/> 
+                         <TextBlock x:Name="ColorExampleRefrigirator2" Height="18" FontSize="14"  Text="Цвет "/>
+                         <TextBlock x:Name="RazmorozExampleRefrigirator2" Height="18" FontSize="14"   Text="Размораживание камеры"/> 
+                        <TextBlock x:Name="HeightExampleRefrigirator2" Height="18" FontSize="14"  Text="Высота "/> 
+                        
+                    </StackPanel>
+                    <StackPanel Height="199" RenderTransformOrigin="0.5,0.5" Width="335">
+                        <TextBlock x:Name="NameExampleRefrigirator2Y" Height="52" FontSize="34"  Text="12"/>
+                        <TextBlock x:Name="CodeExampleRefrigirator2Y" Height="30" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="LinExampleRefrigirator2Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="ZoneExampleRefrigirator2Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="ColorExampleRefrigirator2Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="RazmorozExampleRefrigirator2Y" Height="18" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="TechnologyExampleRefrigirator2Y" Height="18" FontSize="14" Text="12" /> 
+                        
+                    </StackPanel>
+                    <StackPanel Height="192" RenderTransformOrigin="0.5,0.5" Width="126">
+                        <Button x:Name="BuyExampleRefrigirator2" Height="62">
+                            <Button.Background>
+                                 <ImageBrush ImageSource="/Images/Korzina.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                </TextBlock>
+            </Paragraph>
+            <Paragraph>
+                <TextBlock Height="213" Width="962">
+                    <Image  x:Name="ExampleRefrigirator3" Height="195" Width="287" ></Image>
+                    <StackPanel Height="200" RenderTransformOrigin="0.5,0.5" Width="186">
+                         <TextBlock x:Name="NameExampleRefrigirator3" Height="52" FontSize="24"  Text="Название"/>
+                         <TextBlock x:Name="CodeExampleRefrigirator3" Height="30" FontSize="14"  Text="Код"/> 
+                          <TextBlock x:Name="CamersExampleRefrigirator3" Height="18" FontSize="14"   Text="Количество камер"/>  
+                         <TextBlock x:Name="ZoneExampleRefrigirator3" Height="18" FontSize="14"  Text="Зона свежести"/> 
+                         <TextBlock x:Name="ColorExampleRefrigirator3" Height="18" FontSize="14"  Text="Цвет "/>
+                         <TextBlock x:Name="RazmorozExampleRefrigirator3" Height="18" FontSize="14"   Text="Размораживание камеры"/> 
+                       <TextBlock x:Name="HeightExampleRefrigirator3" Height="18" FontSize="14"  Text="Высота "/>  
+                        
+                    </StackPanel>
+                    <StackPanel Height="199" RenderTransformOrigin="0.5,0.5" Width="335">
+                        <TextBlock x:Name="NameExampleRefrigirator3Y" Height="52" FontSize="34"  Text="12"/>
+                        <TextBlock x:Name="CodeExampleRefrigirator3Y" Height="30" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="LinExampleRefrigirator3Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="ZoneExampleRefrigirator3Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="ColorExampleRefrigirator3Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="RazmorozExampleRefrigirator3Y" Height="18" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="TechnologyExampleRefrigirator3Y" Height="18" FontSize="14" Text="12" /> 
+                        
+                    </StackPanel>
+                    <StackPanel Height="192" RenderTransformOrigin="0.5,0.5" Width="126">
+                        <Button x:Name="BuyExampleRefrigirator3" Height="62">
+                            <Button.Background>
+                                 <ImageBrush ImageSource="/Images/Korzina.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                </TextBlock>
+            </Paragraph>
+        </FlowDocument>
+    </FlowDocumentScrollViewer>
+</Page>

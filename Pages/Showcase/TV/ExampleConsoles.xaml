@@ -1,0 +1,125 @@
+﻿<Page x:Class="LAB33_KPIAP.Pages.Showcase.ExampleConsoles"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LAB33_KPIAP.Pages.Showcase"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="1000"
+      Title="ExampleConsoles">
+
+    <FlowDocumentScrollViewer Margin="0,10">
+        <FlowDocument Background="White">
+            <Paragraph>
+                <WrapPanel Height="33" Width="854">
+                    <TextBlock Margin="0,0,10,0" >
+               Выберете фильтр:
+                    </TextBlock>
+                    <RadioButton Content="Цена по возростанию" Tag="Price" Checked="RadioButton_Checked"></RadioButton>
+                    <RadioButton Content="Цена по убыванию" Tag="Price2" Checked="RadioButton_Checked"></RadioButton>
+                    <RadioButton Content="Название" Tag="Name" Checked="RadioButton_Checked"></RadioButton>
+                </WrapPanel>
+            </Paragraph>
+                <Paragraph>
+                    <TextBlock Height="213" Width="962">
+                    <Image x:Name="ExampleConsole1" Height="195" Width="287" ></Image>
+                    <StackPanel Height="200" RenderTransformOrigin="0.5,0.5" Width="186">
+                         <TextBlock x:Name="NameExampleConsole1" Height="52" FontSize="24"  Text="Название"/>
+                         <TextBlock x:Name="CodeExampleConsole1" Height="30" FontSize="14"  Text="Код"/> 
+                         <TextBlock x:Name="TypeExampleConsole1" Height="18" FontSize="14"  Text="Тип"/> 
+                         
+                         <TextBlock x:Name="NositeliExampleConsole1" Height="18" FontSize="14"  Text="Поддерживаемые носители"/> 
+                        <TextBlock x:Name="WifiExampleConsole1" Height="18" FontSize="14"  Text="Wifi"/> 
+                        
+                    </StackPanel>
+                    <StackPanel Height="199" RenderTransformOrigin="0.5,0.5" Width="335">
+                        <TextBlock x:Name="NameExampleConsole1Y" TextWrapping="Wrap" Height="52" FontSize="20"  Text="12"/>
+                        <TextBlock x:Name="CodeExampleConsole1Y" Height="30" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="LinExampleConsole1Y" Height="18" FontSize="14" Text="12" />
+                        
+                        <TextBlock x:Name="NositeliExampleConsole1Y" TextWrapping="Wrap" Height="18" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="WifiExampleConsole1Y" Height="18" FontSize="14" Text="12" /> 
+                        
+                    </StackPanel>
+                    <StackPanel Height="192" RenderTransformOrigin="0.5,0.5" Width="104">
+                        <TextBlock x:Name="PriceExampleConsole1" Height="69" FontWeight="DemiBold" FontSize="20">
+                            12
+                        </TextBlock>
+                        <Button Click="BuyExampleConsole1" Height="62" Margin="2,0,0,0">
+                            <Button.Background>
+                                 <ImageBrush ImageSource="/Images/Korzina.png"/>
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                </TextBlock>
+                </Paragraph>
+                <Paragraph>
+                    <TextBlock Height="213" Width="962">
+                    <Image  x:Name="ExampleConsole2" Height="195" Width="287" ></Image>
+                    <StackPanel Height="200" RenderTransformOrigin="0.5,0.5" Width="186">
+                         <TextBlock x:Name="NameExampleConsole2" Height="52" FontSize="24"  Text="Название"/>
+                         <TextBlock x:Name="CodeExampleConsole2" Height="30" FontSize="14"  Text="Код"/> 
+                          <TextBlock x:Name="TypeExampleConsole2" Height="18" FontSize="14"  Text="Тип"/> 
+                         
+                         <TextBlock x:Name="NositeliExampleConsole2" Height="18" FontSize="14"  Text="Поддерживаемые носители"/> 
+                        <TextBlock x:Name="WifiExampleConsole2" Height="18" FontSize="14"  Text="Wifi"/> 
+                        
+                    </StackPanel>
+                    <StackPanel Height="199" RenderTransformOrigin="0.5,0.5" Width="335">
+                        <TextBlock x:Name="NameExampleConsole2Y" TextWrapping="Wrap" Height="52" FontSize="20"  Text="12"/>
+                        <TextBlock x:Name="CodeExampleConsole2Y" Height="30" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="LinExampleConsole2Y" Height="18" FontSize="14" Text="12" />
+                        
+                        <TextBlock x:Name="NositeliExampleConsole2Y" TextWrapping="Wrap" Height="18" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="WifiExampleConsole2Y" Height="18" FontSize="14" Text="12" /> 
+                        
+                    </StackPanel>
+                    <StackPanel Height="192" RenderTransformOrigin="0.5,0.5" Width="104">
+                        <TextBlock x:Name="PriceExampleConsole2" Height="69" FontWeight="DemiBold" FontSize="20">
+                            12
+                        </TextBlock>
+                        <Button Click="BuyExampleConsole2" Height="62" Margin="2,0,0,0">
+                            <Button.Background>
+                                 <ImageBrush ImageSource="/Images/Korzina.png"/>
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                </TextBlock>
+                </Paragraph>
+                <Paragraph>
+                    <TextBlock Height="213" Width="962">
+                    <Image  x:Name="ExampleConsole3" Height="195" Width="287" ></Image>
+                    <StackPanel Height="200" RenderTransformOrigin="0.5,0.5" Width="186">
+                         <TextBlock x:Name="NameExampleConsole3" Height="52" FontSize="24"  Text="Название"/>
+                         <TextBlock x:Name="CodeExampleConsole3" Height="30" FontSize="14"  Text="Код"/> 
+                          <TextBlock x:Name="TypeExampleConsole3" Height="18" FontSize="14"  Text="Тип"/>  
+                         
+                         <TextBlock x:Name="NositeliExampleConsole3" Height="18" FontSize="14"  Text="Поддерживаемые носители"/> 
+                       <TextBlock x:Name="WifiExampleConsole3" Height="18" FontSize="14"  Text="Wifi"/>  
+                        
+                    </StackPanel>
+                    <StackPanel Height="199" RenderTransformOrigin="0.5,0.5" Width="335">
+                        <TextBlock x:Name="NameExampleConsole3Y"  TextWrapping="Wrap" Height="52" FontSize="20"  Text="12"/>
+                        <TextBlock x:Name="CodeExampleConsole3Y" Height="30" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="LinExampleConsole3Y" Height="18" FontSize="14" Text="12" />
+                       
+                        <TextBlock x:Name="NositeliExampleConsole3Y" TextWrapping="Wrap" Height="18" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="WifiExampleConsole3Y" Height="18" FontSize="14" Text="12" /> 
+                        
+                    </StackPanel>
+                    <StackPanel Height="192" RenderTransformOrigin="0.5,0.5" Width="104">
+                        <TextBlock x:Name="PriceExampleConsole3" Height="69" FontWeight="DemiBold" FontSize="20">
+                            12
+                        </TextBlock>
+                        <Button Click="BuyExampleConsole3" Height="62" Margin="2,0,0,0">
+                            <Button.Background>
+                                 <ImageBrush ImageSource="/Images/Korzina.png"/>
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                </TextBlock>
+                </Paragraph>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+   
+</Page>

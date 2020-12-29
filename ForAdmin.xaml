@@ -1,0 +1,29 @@
+﻿<Window x:Class="LAB33_KPIAP.ForAdmin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LAB33_KPIAP"
+        mc:Ignorable="d"
+        Icon ="/Images/hnet.com-image.ico"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Title="Окно админа" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="eGrid"  Margin="0,0,0,70">
+            
+        </DataGrid>
+        <Button Margin="87,365,609,10" Content="Список Покупателей" x:Name="PokupButton" Click="Pokup_Click"></Button>
+        <Button Margin="190,365,514,10" Content="Список Сотрудников" x:Name="EmployeersButton" Click="Employeers_Click"></Button>
+        <Button Margin="285,365,413,10" Content="Список Заказов" x:Name="ZakazButton" Click="Zakaz_Click"></Button>
+        <Button Margin="386,365,312,10" Content="Отчет #1" x:Name="ZButton" Click="MoreBuy_Click"></Button>
+        <Button Margin="487,365,211,10" Content="Отчет #2"  Click="Otmens_Click"></Button>
+        <Button Margin="619,365,95,10"  Background="LightGreen" Content="Обновить"  Click="Update_Click"></Button>
+        <Button Margin="704,365,10,10"  Background="LightCoral" Content="Удалить" x:Name="DeleteButton" Click="Delete_Click"></Button>
+        <Button Margin="10,365,725,10" BorderBrush="White" BorderThickness="0" Click="Back_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/Back.png"></ImageBrush>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

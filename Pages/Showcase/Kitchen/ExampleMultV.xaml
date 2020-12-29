@@ -1,0 +1,105 @@
+﻿<Page x:Class="LAB33_KPIAP.Pages.Showcase.ExampleMultV"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LAB33_KPIAP.Pages.Showcase"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="1000"
+      Title="ExampleMultV">
+
+    <FlowDocumentScrollViewer>
+        <FlowDocument Background="White">
+            <Paragraph>
+                <TextBlock Height="213" Width="962">
+                    <Image x:Name="ExampleMultV1" Height="195" Width="287" ></Image>
+                    <StackPanel Height="200" RenderTransformOrigin="0.5,0.5" Width="186">
+                         <TextBlock x:Name="NameExampleMultV1" Height="52" FontSize="24"  Text="Название"/>
+                         <TextBlock x:Name="CodeExampleMultV1" Height="30" FontSize="14"  Text="Код"/> 
+                         <TextBlock x:Name="TypeExampleMultV1" Height="18" FontSize="14"  Text="Тип"/> 
+                         <TextBlock x:Name="TypeNagrevaExampleMultV1" Height="18" FontSize="14"  Text="Тип нагрева"/> 
+                         <TextBlock x:Name="CapacityExampleMultV1" Height="18" FontSize="14"  Text="Объем оперативной памяти"/>
+                         
+                        
+                    </StackPanel>
+                    <StackPanel Height="199" RenderTransformOrigin="0.5,0.5" Width="335">
+                        <TextBlock x:Name="NameExampleMultV1Y" Height="52" FontSize="34"  Text="12"/>
+                        <TextBlock x:Name="CodeExampleMultV1Y" Height="30" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="LinExampleMultV1Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="TypeNagrevaExampleMultV1Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="CapacityExampleMultV1Y" Height="18" FontSize="14" Text="12" />
+                        
+                        
+                    </StackPanel>
+                    <StackPanel Height="192" RenderTransformOrigin="0.5,0.5" Width="126">
+                        <Button x:Name="BuyExampleMultV1" Height="62">
+                            <Button.Background>
+                                 <ImageBrush ImageSource="/Images/Korzina.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                </TextBlock>
+            </Paragraph>
+            <Paragraph>
+                <TextBlock Height="213" Width="962">
+                    <Image  x:Name="ExampleMultV2" Height="195" Width="287" ></Image>
+                    <StackPanel Height="200" RenderTransformOrigin="0.5,0.5" Width="186">
+                         <TextBlock x:Name="NameExampleMultV2" Height="52" FontSize="24"  Text="Название"/>
+                         <TextBlock x:Name="CodeExampleMultV2" Height="30" FontSize="14"  Text="Код"/> 
+                          <TextBlock x:Name="TypeExampleMultV2" Height="18" FontSize="14"  Text="Тип"/> 
+                         <TextBlock x:Name="TypeNagrevaExampleMultV2" Height="18" FontSize="14"  Text="Тип нагрева"/> 
+                         <TextBlock x:Name="CapacityExampleMultV2" Height="18" FontSize="14"  Text="Объем оперативной памяти"/>
+                         
+                        
+                    </StackPanel>
+                    <StackPanel Height="199" RenderTransformOrigin="0.5,0.5" Width="335">
+                        <TextBlock x:Name="NameExampleMultV2Y" Height="52" FontSize="34"  Text="12"/>
+                        <TextBlock x:Name="CodeExampleMultV2Y" Height="30" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="LinExampleMultV2Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="TypeNagrevaExampleMultV2Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="CapacityExampleMultV2Y" Height="18" FontSize="14" Text="12" />
+                       
+                        
+                    </StackPanel>
+                    <StackPanel Height="192" RenderTransformOrigin="0.5,0.5" Width="126">
+                        <Button x:Name="BuyExampleMultV2" Height="62">
+                            <Button.Background>
+                                 <ImageBrush ImageSource="/Images/Korzina.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                </TextBlock>
+            </Paragraph>
+            <Paragraph>
+                <TextBlock Height="213" Width="962">
+                    <Image  x:Name="ExampleMultV3" Height="195" Width="287" ></Image>
+                    <StackPanel Height="200" RenderTransformOrigin="0.5,0.5" Width="186">
+                         <TextBlock x:Name="NameExampleMultV3" Height="52" FontSize="24"  Text="Название"/>
+                         <TextBlock x:Name="CodeExampleMultV3" Height="30" FontSize="14"  Text="Код"/> 
+                          <TextBlock x:Name="TypeExampleMultV3" Height="18" FontSize="14"  Text="Тип"/>  
+                         <TextBlock x:Name="TypeNagrevaExampleMultV3" Height="18" FontSize="14"  Text="Тип нагрева"/> 
+                         <TextBlock x:Name="CapacityExampleMultV3" Height="18" FontSize="14"  Text="Объем оперативной памяти"/>
+                         
+                        
+                    </StackPanel>
+                    <StackPanel Height="199" RenderTransformOrigin="0.5,0.5" Width="335">
+                        <TextBlock x:Name="NameExampleMultV3Y" Height="52" FontSize="34"  Text="12"/>
+                        <TextBlock x:Name="CodeExampleMultV3Y" Height="30" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="LinExampleMultV3Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="TypeNagrevaExampleMultV3Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="CapacityExampleMultV3Y" Height="18" FontSize="14" Text="12" />
+                        
+                        
+                    </StackPanel>
+                    <StackPanel Height="192" RenderTransformOrigin="0.5,0.5" Width="126">
+                        <Button x:Name="BuyExampleMultV3" Height="62">
+                            <Button.Background>
+                                 <ImageBrush ImageSource="/Images/Korzina.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                </TextBlock>
+            </Paragraph>
+        </FlowDocument>
+    </FlowDocumentScrollViewer>
+</Page>

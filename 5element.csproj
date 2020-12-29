@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EFAE24AC-A20C-44FE-872D-6E0EB1DCEEE1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LAB33_KPIAP</RootNamespace>
+    <AssemblyName>LAB33_KPIAP</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonServiceLocator, Version=2.0.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>packages\CommonServiceLocator.2.0.2\lib\net47\CommonServiceLocator.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight, Version=5.4.1.0, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
+      <HintPath>packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Extras, Version=5.4.1.0, Culture=neutral, PublicKeyToken=669f0b5e8f868abf, processorArchitecture=MSIL">
+      <HintPath>packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.Extras.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Platform, Version=5.4.1.0, Culture=neutral, PublicKeyToken=5f873c45e98af8a1, processorArchitecture=MSIL">
+      <HintPath>packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\MvvmLightLibs.5.4.1.1\lib\net45\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="CreateAccount.xaml.cs">
+      <DependentUpon>CreateAccount.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ForAdmin.xaml.cs">
+      <DependentUpon>ForAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.xaml.cs">
+      <DependentUpon>LogIn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Adresa.xaml.cs">
+      <DependentUpon>Adresa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ForUpadateAccount.xaml.cs">
+      <DependentUpon>ForUpadateAccount.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FoundElements.xaml.cs">
+      <DependentUpon>FoundElements.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Korzina.xaml.cs">
+      <DependentUpon>Korzina.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\Phons\ExampleAcsForGadgets.xaml.cs">
+      <DependentUpon>ExampleAcsForGadgets.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\Sport\ExampleBeg.xaml.cs">
+      <DependentUpon>ExampleBeg.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\Sport\ExampleBicycles.xaml.cs">
+      <DependentUpon>ExampleBicycles.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\PhotoApparats\ExampleCameras.xaml.cs">
+      <DependentUpon>ExampleCameras.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\PhotoApparats\ExampleCardOfMemory.xaml.cs">
+      <DependentUpon>ExampleCardOfMemory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\Computers\ExampleComputers.xaml.cs">
+      <DependentUpon>ExampleComputers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\TV\ExampleConsoles.xaml.cs">
+      <DependentUpon>ExampleConsoles.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\Gaamezone\ExampleConsoles2.xaml.cs">
+      <DependentUpon>ExampleConsoles2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\Remont\ExampleDrels.xaml.cs">
+      <DependentUpon>ExampleDrels.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\Sport\ExampleElectroSamokates.xaml.cs">
+      <DependentUpon>ExampleElectroSamokates.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\Remont\ExampleFonars.xaml.cs">
+      <DependentUpon>ExampleFonars.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\Gaamezone\ExampleGames.xaml.cs">
+      <DependentUpon>ExampleGames.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\Audio\ExampleHeardrops.xaml.cs">
+      <DependentUpon>ExampleHeardrops.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\Gaamezone\ExampleKvadrokopters.xaml.cs">
+      <DependentUpon>ExampleKvadrokopters.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\Audio\ExampleMicrofons.xaml.cs">
+      <DependentUpon>ExampleMicrofons.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\Kitchen\ExampleMultV.xaml.cs">
+      <DependentUpon>ExampleMultV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\Computers\ExampleNoutBooks.xaml.cs">
+      <DependentUpon>ExampleNoutBooks.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\PhotoApparats\ExamplePhotoApparats.xaml.cs">
+      <DependentUpon>ExamplePhotoApparats.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\Home\ExamplePilesos.xaml.cs">
+      <DependentUpon>ExamplePilesos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\Remont\ExamplePils.xaml.cs">
+      <DependentUpon>ExamplePils.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\Kitchen\ExamplePlits.xaml.cs">
+      <DependentUpon>ExamplePlits.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\Kitchen\ExampleRefrigirators.xaml.cs">
+      <DependentUpon>ExampleRefrigirators.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\Audio\ExampleSintezators.xaml.cs">
+      <DependentUpon>ExampleSintezators.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\Home\ExampleStiralki.xaml.cs">
+      <DependentUpon>ExampleStiralki.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\TV\ExampleTV.xaml.cs">
+      <DependentUpon>ExampleTV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\Home\ExampleUtug.xaml.cs">
+      <DependentUpon>ExampleUtug.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\Computers\ExampleVvodAndVivod.xaml.cs">
+      <DependentUpon>ExampleVvodAndVivod.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\TV\ExapmleVideoTechnique.xaml.cs">
+      <DependentUpon>ExapmleVideoTechnique.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Spravka.xaml.cs">
+      <DependentUpon>Spravka.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Сlassification\Audio.xaml.cs">
+      <DependentUpon>Audio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Сlassification\Computers.xaml.cs">
+      <DependentUpon>Computers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\Phons\ExamplePhones.xaml.cs">
+      <DependentUpon>ExamplePhones.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Showcase\Phons\ExapmlePads.xaml.cs">
+      <DependentUpon>ExapmlePads.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Сlassification\GameZone.xaml.cs">
+      <DependentUpon>GameZone.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Сlassification\PhotoApparats.xaml.cs">
+      <DependentUpon>PhotoApparats.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Сlassification\Remont.xaml.cs">
+      <DependentUpon>Remont.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Сlassification\Sport.xaml.cs">
+      <DependentUpon>Sport.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Сlassification\TechniqueForHome.xaml.cs">
+      <DependentUpon>TechniqueForHome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Сlassification\PhonesAndPads.xaml.cs">
+      <DependentUpon>PhonesAndPads.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Slaider2.xaml.cs">
+      <DependentUpon>Slaider2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Сlassification\TechniqueForKitchen.xaml.cs">
+      <DependentUpon>TechniqueForKitchen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Сlassification\VideoAndTV.xaml.cs">
+      <DependentUpon>VideoAndTV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\MainWindowViewModel.cs" />
+    <Page Include="CreateAccount.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ForAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LogIn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Pages\Adresa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ForUpadateAccount.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\FoundElements.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Korzina.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\Phons\ExampleAcsForGadgets.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\Sport\ExampleBeg.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\Sport\ExampleBicycles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\PhotoApparats\ExampleCameras.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\PhotoApparats\ExampleCardOfMemory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\Computers\ExampleComputers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\TV\ExampleConsoles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\Gaamezone\ExampleConsoles2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\Remont\ExampleDrels.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\Sport\ExampleElectroSamokates.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\Remont\ExampleFonars.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\Gaamezone\ExampleGames.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\Audio\ExampleHeardrops.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\Gaamezone\ExampleKvadrokopters.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\Audio\ExampleMicrofons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\Kitchen\ExampleMultV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\Computers\ExampleNoutBooks.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\PhotoApparats\ExamplePhotoApparats.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\Home\ExamplePilesos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\Remont\ExamplePils.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\Kitchen\ExamplePlits.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\Kitchen\ExampleRefrigirators.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\Audio\ExampleSintezators.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\Home\ExampleStiralki.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\TV\ExampleTV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\Home\ExampleUtug.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\Computers\ExampleVvodAndVivod.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\TV\ExapmleVideoTechnique.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Spravka.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Сlassification\Audio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Сlassification\Computers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\Phons\ExamplePhones.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Showcase\Phons\ExapmlePads.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Сlassification\GameZone.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Сlassification\PhotoApparats.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Сlassification\Remont.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Сlassification\Sport.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Сlassification\TechniqueForHome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Сlassification\PhonesAndPads.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Slaider2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Сlassification\TechniqueForKitchen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Сlassification\VideoAndTV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Database1DataSet.xsc">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet.xss">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet2.xsc">
+      <DependentUpon>Database1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet2.xss">
+      <DependentUpon>Database1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\01.png" />
+    <Resource Include="Images\02.png" />
+    <Resource Include="Images\03.png" />
+    <Resource Include="Images\04.png" />
+    <Resource Include="Images\05.png" />
+    <Resource Include="Images\06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Adresa2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Phone1.png" />
+    <Resource Include="Images\Phone2.png" />
+    <Resource Include="Images\Phone3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Korzina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Fon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Fon2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Справка.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Screenshot_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Adresa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Resource Include="Images\hnet.com-image.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

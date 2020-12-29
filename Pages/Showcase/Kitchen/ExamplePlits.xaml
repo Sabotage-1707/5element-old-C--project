@@ -1,0 +1,104 @@
+﻿<Page x:Class="LAB33_KPIAP.Pages.Showcase.ExamplePlits"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LAB33_KPIAP.Pages.Showcase"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="1000"
+      Title="ExamplePlits">
+
+    <FlowDocumentScrollViewer>
+        <FlowDocument Background="White">
+            <Paragraph>
+                <TextBlock Height="213" Width="962">
+                    <Image x:Name="ExamplePlita1" Height="195" Width="287" ></Image>
+                    <StackPanel Height="200" RenderTransformOrigin="0.5,0.5" Width="186">
+                         <TextBlock x:Name="NameExamplePlita1" Height="52" FontSize="24"  Text="Название"/>
+                         <TextBlock x:Name="CodeExamplePlita1" Height="30" FontSize="14"  Text="Код"/> 
+                         <TextBlock x:Name="TypeExamplePlita1" Height="18" FontSize="14"  Text="Тип нагрева"/> 
+                         <TextBlock x:Name="ColorExamplePlita1" Height="18" FontSize="14"  Text="Цвет "/> 
+                         <TextBlock x:Name="HeightExamplePlita1" Height="18" FontSize="14"  Text="Ширина"/>
+                         
+                        
+                    </StackPanel>
+                    <StackPanel Height="199" RenderTransformOrigin="0.5,0.5" Width="335">
+                        <TextBlock x:Name="NameExamplePlita1Y" Height="52" FontSize="34"  Text="12"/>
+                        <TextBlock x:Name="CodeExamplePlita1Y" Height="30" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="LinExamplePlita1Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="ColorExamplePlita1Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="HeightExamplePlita1Y" Height="18" FontSize="14" Text="12" />
+                      
+                        
+                    </StackPanel>
+                    <StackPanel Height="192" RenderTransformOrigin="0.5,0.5" Width="126">
+                        <Button x:Name="BuyExamplePlita1" Height="62">
+                            <Button.Background>
+                                 <ImageBrush ImageSource="/Images/Korzina.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                </TextBlock>
+            </Paragraph>
+            <Paragraph>
+                <TextBlock Height="213" Width="962">
+                    <Image  x:Name="ExamplePlita2" Height="195" Width="287" ></Image>
+                    <StackPanel Height="200" RenderTransformOrigin="0.5,0.5" Width="186">
+                         <TextBlock x:Name="NameExamplePlita2" Height="52" FontSize="24"  Text="Название"/>
+                         <TextBlock x:Name="CodeExamplePlita2" Height="30" FontSize="14"  Text="Код"/> 
+                          <TextBlock x:Name="TypeExamplePlita2" Height="18" FontSize="14"  Text="Тип нагрева"/> 
+                         <TextBlock x:Name="ColorExamplePlita2" Height="18" FontSize="14"  Text="Цвет "/> 
+                         <TextBlock x:Name="HeightExamplePlita2" Height="18" FontSize="14"  Text="Ширина"/>
+                         
+                        
+                    </StackPanel>
+                    <StackPanel Height="199" RenderTransformOrigin="0.5,0.5" Width="335">
+                        <TextBlock x:Name="NameExamplePlita2Y" Height="52" FontSize="34"  Text="12"/>
+                        <TextBlock x:Name="CodeExamplePlita2Y" Height="30" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="LinExamplePlita2Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="ColorExamplePlita2Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="HeightExamplePlita2Y" Height="18" FontSize="14" Text="12" />
+                       
+                        
+                    </StackPanel>
+                    <StackPanel Height="192" RenderTransformOrigin="0.5,0.5" Width="126">
+                        <Button x:Name="BuyExamplePlita2" Height="62">
+                            <Button.Background>
+                                 <ImageBrush ImageSource="/Images/Korzina.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                </TextBlock>
+            </Paragraph>
+            <Paragraph>
+                <TextBlock Height="213" Width="962">
+                    <Image  x:Name="ExamplePlita3" Height="195" Width="287" ></Image>
+                    <StackPanel Height="200" RenderTransformOrigin="0.5,0.5" Width="186">
+                         <TextBlock x:Name="NameExamplePlita3" Height="52" FontSize="24"  Text="Название"/>
+                         <TextBlock x:Name="CodeExamplePlita3" Height="30" FontSize="14"  Text="Код"/> 
+                          <TextBlock x:Name="TypeExamplePlita3" Height="18" FontSize="14"  Text="Тип нагрева"/>  
+                         <TextBlock x:Name="ColorExamplePlita3" Height="18" FontSize="14"  Text="Цвет "/> 
+                         <TextBlock x:Name="HeightExamplePlita3" Height="18" FontSize="14"  Text="Ширина"/>
+                        
+                    </StackPanel>
+                    <StackPanel Height="199" RenderTransformOrigin="0.5,0.5" Width="335">
+                        <TextBlock x:Name="NameExamplePlita3Y" Height="52" FontSize="34"  Text="12"/>
+                        <TextBlock x:Name="CodeExamplePlita3Y" Height="30" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="LinExamplePlita3Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="ColorExamplePlita3Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="HeightExamplePlita3Y" Height="18" FontSize="14" Text="12" />
+                       
+                        
+                    </StackPanel>
+                    <StackPanel Height="192" RenderTransformOrigin="0.5,0.5" Width="126">
+                        <Button x:Name="BuyExamplePlita3" Height="62">
+                            <Button.Background>
+                                 <ImageBrush ImageSource="/Images/Korzina.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                </TextBlock>
+            </Paragraph>
+        </FlowDocument>
+    </FlowDocumentScrollViewer>
+</Page>

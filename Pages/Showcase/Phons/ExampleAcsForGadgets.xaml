@@ -1,0 +1,123 @@
+﻿<Page x:Class="LAB33_KPIAP.Pages.Showcase.ExampleAcsForGadgets"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LAB33_KPIAP.Pages.Showcase"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="1000"
+      Title="ExampleAcsForGadgets">
+
+    <FlowDocumentScrollViewer Margin="0,10">
+        <FlowDocument Background="White">
+            <Paragraph>
+                <WrapPanel Height="33" Width="854">
+                    <TextBlock Margin="0,0,10,0" >
+               Выберете фильтр:
+                    </TextBlock>
+                    <RadioButton Content="Цена по возростанию" Tag="Price" Checked="RadioButton_Checked"></RadioButton>
+                    <RadioButton Content="Цена по убыванию" Tag="Price2" Checked="RadioButton_Checked"></RadioButton>
+                    <RadioButton Content="Название" Tag="Name" Checked="RadioButton_Checked"></RadioButton>
+                </WrapPanel>
+            </Paragraph>
+                <Paragraph>
+                    <TextBlock Height="213" Width="962">
+                    <Image x:Name="ExampleHeadphones1" Height="195" Width="287" ></Image>
+                    <StackPanel Height="200" RenderTransformOrigin="0.5,0.5" Width="186">
+                         <TextBlock x:Name="NameExampleHeadphones1" Height="52" FontSize="24"  Text="Название"/>
+                         <TextBlock x:Name="CodeExampleHeadphones1" Height="30" FontSize="14"  Text="Код"/> 
+                         <TextBlock x:Name="KindExampleHeadphones1" Height="18" FontSize="14"  Text="Вид устройства"/> 
+                         <TextBlock x:Name="TypeExampleHeadphones1" Height="18" FontSize="14"  Text="Тип подключения "/> 
+                         <TextBlock x:Name="ConstructionExampleHeadphones1" Height="18" FontSize="14"  Text="Конструкция наушников"/>
+                        
+                        
+                    </StackPanel>
+                    <StackPanel Height="199" RenderTransformOrigin="0.5,0.5" Width="335">
+                        <TextBlock x:Name="NameExampleHeadphones1Y" TextWrapping="Wrap" Height="52" FontSize="20"  Text="12"/>
+                        <TextBlock x:Name="CodeExampleHeadphones1Y" Height="30" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="KindExampleHeadphones1Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="TypeExampleHeadphones1Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="ConstructionExampleHeadphones1Y" Height="18" FontSize="14" Text="12" />
+                        
+                        
+                    </StackPanel>
+                    <StackPanel Height="192" RenderTransformOrigin="0.5,0.5" Width="104">
+                        <TextBlock x:Name="PriceExampleHeadphones1" Height="69" FontWeight="DemiBold" FontSize="20">
+                            12
+                        </TextBlock>
+                        <Button Click="BuyExampleHeadphones1" Height="62" Margin="2,0,0,0">
+                            <Button.Background>
+                                 <ImageBrush ImageSource="/Images/Korzina.png"/>
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                </TextBlock>
+                </Paragraph>
+                <Paragraph>
+                    <TextBlock Height="213" Width="962">
+                    <Image  x:Name="ExampleHeadphones2" Height="195" Width="287" ></Image>
+                    <StackPanel Height="200" RenderTransformOrigin="0.5,0.5" Width="186">
+                         <TextBlock x:Name="NameExampleHeadphones2" Height="52" FontSize="24"  Text="Название"/>
+                         <TextBlock x:Name="CodeExampleHeadphones2" Height="30" FontSize="14"  Text="Код"/> 
+                         <TextBlock x:Name="KindExampleHeadphones2" Height="18" FontSize="14"  Text="Вид устройства"/> 
+                         <TextBlock x:Name="TypeExampleHeadphones2" Height="18" FontSize="14"  Text="Тип подключения "/> 
+                         <TextBlock x:Name="ConstructionExampleHeadphones2" Height="18" FontSize="14"  Text="Конструкция наушников"/>
+                         
+                        
+                    </StackPanel>
+                    <StackPanel Height="199" RenderTransformOrigin="0.5,0.5" Width="335">
+                        <TextBlock x:Name="NameExampleHeadphones2Y" TextWrapping="Wrap" Height="52" FontSize="20"  Text="12"/>
+                        <TextBlock x:Name="CodeExampleHeadphones2Y" Height="30" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="KindExampleHeadphones2Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="TypeExampleHeadphones2Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="ConstructionExampleHeadphones2Y" Height="18" FontSize="14" Text="12" />
+                        
+                        
+                    </StackPanel>
+                    <StackPanel Height="192" RenderTransformOrigin="0.5,0.5" Width="104">
+                        <TextBlock x:Name="PriceExampleHeadphones2" Height="69" FontWeight="DemiBold" FontSize="20">
+                            12
+                        </TextBlock>
+                        <Button Click="BuyExampleHeadphones2" Height="62" Margin="2,0,0,0">
+                            <Button.Background>
+                                 <ImageBrush ImageSource="/Images/Korzina.png"/>
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                </TextBlock>
+                </Paragraph>
+                <Paragraph>
+                    <TextBlock Height="213" Width="962">
+                    <Image  x:Name="ExampleHeadphones3" Height="195" Width="287" ></Image>
+                    <StackPanel Height="200" RenderTransformOrigin="0.5,0.5" Width="186">
+                         <TextBlock x:Name="NameExampleHeadphones3" Height="52" FontSize="24"  Text="Название"/>
+                         <TextBlock x:Name="CodeExampleHeadphones3" Height="30" FontSize="14"  Text="Код"/> 
+                         <TextBlock x:Name="KindExampleHeadphones3" Height="18" FontSize="14"  Text="Вид устройства"/> 
+                         <TextBlock x:Name="TypeExampleHeadphones3" Height="18" FontSize="14"  Text="Тип подключения"/> 
+                         <TextBlock x:Name="ConstructionExampleHeadphones3" Height="18" FontSize="14"  Text="Конструкция наушников"/>
+                         
+                        
+                    </StackPanel>
+                    <StackPanel Height="199" RenderTransformOrigin="0.5,0.5" Width="335">
+                        <TextBlock x:Name="NameExampleHeadphones3Y" TextWrapping="Wrap" Height="52" FontSize="20"  Text="12"/>
+                        <TextBlock x:Name="CodeExampleHeadphones3Y" Height="30" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="KindExampleHeadphones3Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="TypeExampleHeadphones3Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="ConstructionExampleHeadphones3Y" Height="18" FontSize="14" Text="12" />
+                        
+                    </StackPanel>
+                    <StackPanel Height="192" RenderTransformOrigin="0.5,0.5" Width="104">
+                        <TextBlock x:Name="PriceExampleHeadphones3" Height="69" FontWeight="DemiBold" FontSize="20">
+                            12
+                        </TextBlock>
+                        <Button Click="BuyExampleHeadphones3" Height="62" Margin="2,0,0,0">
+                            <Button.Background>
+                                 <ImageBrush ImageSource="/Images/Korzina.png"/>
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                </TextBlock>
+                </Paragraph>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+</Page>

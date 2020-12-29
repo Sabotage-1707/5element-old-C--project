@@ -1,0 +1,130 @@
+﻿<Page x:Class="LAB33_KPIAP.Pages.ExamplePhones"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LAB33_KPIAP.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="1000"
+      Title="ExamplePhones">
+
+    <FlowDocumentScrollViewer Margin="0,10">
+        <FlowDocument Background="White">
+            <Paragraph>
+                <WrapPanel Height="33" Width="854">
+                    <TextBlock Margin="0,0,10,0" >
+               Выберете фильтр:
+                    </TextBlock>
+                    <RadioButton Content="Цена по возростанию" Tag="Price" Checked="RadioButton_Checked"></RadioButton>
+                    <RadioButton Content="Цена по убыванию" Tag="Price2" Checked="RadioButton_Checked"></RadioButton>
+                    <RadioButton Content="Название" Tag="Name" Checked="RadioButton_Checked"></RadioButton>
+                </WrapPanel>
+            </Paragraph>
+                <Paragraph>
+                    <TextBlock Height="213" Width="962">
+                    <Image x:Name="ExamplePhone1" Height="195" Width="287" ></Image>
+                    <StackPanel Height="200"  Width="186">
+                         <TextBlock  Height="52" FontSize="24"  Text="Название"/>
+                         <TextBlock  Height="30" FontSize="14"  Text="Код"/> 
+                         <TextBlock  Height="18" FontSize="14"  Text="Линейка"/> 
+                         <TextBlock  Height="18" FontSize="14"  Text="Объем встроенной памяти "/> 
+                         <TextBlock  Height="18" FontSize="14"  Text="Объем оперативной памяти"/>
+                         <TextBlock Height="18" FontSize="14"  Text="Диагональ экрна "/> 
+                        <TextBlock  Height="18" FontSize="14"  Text="Технология экрана"/> 
+                        
+                    </StackPanel>
+                    <StackPanel Height="199"  Width="357">
+                        <TextBlock x:Name="NameExamplePhone1Y"  TextWrapping="Wrap"  Height="52" FontSize="20"  Text="12"/>
+                        <TextBlock x:Name="CodeExamplePhone1Y" Height="30" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="LinExamplePhone1Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="MemoryExamplePhone1Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="HardMemoryExamplePhone1Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="DiagonalExamplePhone1Y" Height="18" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="TechnologyExamplePhone1Y" Height="18" FontSize="14" Text="12" /> 
+                        
+                    </StackPanel>
+                    <StackPanel Height="192"  Width="104">
+                        <TextBlock x:Name="PriceExamplePhone1" Height="69" FontWeight="DemiBold" FontSize="20">
+                            12
+                        </TextBlock>
+                        <Button Click = "BuyExamplePhone1" Height="62" Margin="2,0,0,0">
+                            <Button.Background>
+                                 <ImageBrush ImageSource="/Images/Korzina.png"/>
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                </TextBlock>
+                </Paragraph>
+                <Paragraph>
+                    <TextBlock Height="213" Width="962">
+                    <Image x:Name="ExamplePhone2" Height="195" Width="287" ></Image>
+                    <StackPanel Height="200"  Width="186">
+                         <TextBlock  Height="52" FontSize="24"  Text="Название"/>
+                         <TextBlock  Height="30" FontSize="14"  Text="Код"/> 
+                         <TextBlock  Height="18" FontSize="14"  Text="Линейка"/> 
+                         <TextBlock  Height="18" FontSize="14"  Text="Объем встроенной памяти "/> 
+                         <TextBlock  Height="18" FontSize="14"  Text="Объем оперативной памяти"/>
+                         <TextBlock Height="18" FontSize="14"  Text="Диагональ экрна "/> 
+                        <TextBlock  Height="18" FontSize="14"  Text="Технология экрана"/> 
+                        
+                    </StackPanel>
+                    <StackPanel Height="199"  Width="357">
+                        <TextBlock x:Name="NameExamplePhone2Y"  TextWrapping="Wrap"  Height="52" FontSize="20"  Text="12"/>
+                        <TextBlock x:Name="CodeExamplePhone2Y" Height="30" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="LinExamplePhone2Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="MemoryExamplePhone2Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="HardMemoryExamplePhone2Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="DiagonalExamplePhone2Y" Height="18" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="TechnologyExamplePhone2Y" Height="18" FontSize="14" Text="12" /> 
+                        
+                    </StackPanel>
+                    <StackPanel Height="192" RenderTransformOrigin="0.5,0.5" Width="104">
+                        <TextBlock x:Name="PriceExamplePhone2" Height="69" FontWeight="DemiBold" FontSize="20">
+                            12
+                        </TextBlock>
+                        <Button Click="BuyExamplePhone2" Height="62" Margin="2,0,0,0">
+                            <Button.Background>
+                                 <ImageBrush ImageSource="/Images/Korzina.png"/>
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                </TextBlock>
+                </Paragraph>
+                <Paragraph>
+                    <TextBlock Height="213" Width="962">
+                    <Image x:Name="ExamplePhone3" Height="195" Width="287" ></Image>
+                    <StackPanel Height="200"  Width="186">
+                         <TextBlock  Height="52" FontSize="24"  Text="Название"/>
+                         <TextBlock  Height="30" FontSize="14"  Text="Код"/> 
+                         <TextBlock  Height="18" FontSize="14"  Text="Линейка"/> 
+                         <TextBlock  Height="18" FontSize="14"  Text="Объем встроенной памяти "/> 
+                         <TextBlock  Height="18" FontSize="14"  Text="Объем оперативной памяти"/>
+                         <TextBlock Height="18" FontSize="14"  Text="Диагональ экрна "/> 
+                        <TextBlock  Height="18" FontSize="14"  Text="Технология экрана"/> 
+                        
+                    </StackPanel>
+                    <StackPanel Height="199"  Width="357">
+                        <TextBlock x:Name="NameExamplePhone3Y"  TextWrapping="Wrap"  Height="52" FontSize="20"  Text="12"/>
+                        <TextBlock x:Name="CodeExamplePhone3Y" Height="30" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="LinExamplePhone3Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="MemoryExamplePhone3Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="HardMemoryExamplePhone3Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="DiagonalExamplePhone3Y" Height="18" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="TechnologyExamplePhone3Y" Height="18" FontSize="14" Text="12" /> 
+                        
+                    </StackPanel>
+                    <StackPanel Height="192" RenderTransformOrigin="0.5,0.5" Width="104">
+                        <TextBlock x:Name="PriceExamplePhone3" Height="69" FontWeight="DemiBold" FontSize="20">
+                            12
+                        </TextBlock>
+                        <Button Click="BuyExamplePhone3" Height="62" Margin="2,0,0,0">
+                            <Button.Background>
+                                 <ImageBrush ImageSource="/Images/Korzina.png"/>
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                </TextBlock>
+                </Paragraph>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+</Page>

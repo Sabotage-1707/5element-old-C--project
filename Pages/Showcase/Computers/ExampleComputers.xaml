@@ -1,0 +1,111 @@
+﻿<Page x:Class="LAB33_KPIAP.Pages.Showcase.ExampleComputers"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LAB33_KPIAP.Pages.Showcase"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="1000"
+      Title="ExampleComputers">
+
+    <FlowDocumentScrollViewer>
+        <FlowDocument Background="White">
+            <Paragraph>
+                <TextBlock Height="213" Width="962">
+                    <Image x:Name="ExamplePad1" Height="195" Width="287" ></Image>
+                    <StackPanel Height="200" RenderTransformOrigin="0.5,0.5" Width="186">
+                         <TextBlock x:Name="NameExamplePad1" Height="52" FontSize="24"  Text="Название"/>
+                         <TextBlock x:Name="CodeExamplePad1" Height="30" FontSize="14"  Text="Код"/> 
+                         <TextBlock x:Name="TypeExamplePad1" Height="18" FontSize="14"  Text="Тип оперционной системы"/> 
+                         <TextBlock x:Name="MemoryExamplePad1" Height="18" FontSize="14"  Text="Объем встроенной памяти "/> 
+                         <TextBlock x:Name="HardMemoryExamplePad1" Height="18" FontSize="14"  Text="Объем оперативной памяти"/>
+                         <TextBlock x:Name="DiagonalExamplePad1" Height="18" FontSize="14"  Text="Диагональ экрна "/> 
+                        <TextBlock x:Name="MatrixExamplePad1" Height="18" FontSize="14"  Text="Тип Матрицы"/> 
+                        
+                    </StackPanel>
+                    <StackPanel Height="199" RenderTransformOrigin="0.5,0.5" Width="335">
+                        <TextBlock x:Name="NameExamplePad1Y" Height="52" FontSize="34"  Text="12"/>
+                        <TextBlock x:Name="CodeExamplePad1Y" Height="30" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="LinExamplePad1Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="MemoryExamplePad1Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="HardMemoryExamplePad1Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="DiagonalExamplePad1Y" Height="18" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="TechnologyExamplePad1Y" Height="18" FontSize="14" Text="12" /> 
+                        
+                    </StackPanel>
+                    <StackPanel Height="192" RenderTransformOrigin="0.5,0.5" Width="126">
+                        <Button x:Name="BuyExamplePad1" Height="62">
+                            <Button.Background>
+                                 <ImageBrush ImageSource="/Images/Korzina.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                </TextBlock>
+            </Paragraph>
+            <Paragraph>
+                <TextBlock Height="213" Width="962">
+                    <Image  x:Name="ExamplePad2" Height="195" Width="287" ></Image>
+                    <StackPanel Height="200" RenderTransformOrigin="0.5,0.5" Width="186">
+                         <TextBlock x:Name="NameExamplePad2" Height="52" FontSize="24"  Text="Название"/>
+                         <TextBlock x:Name="CodeExamplePad2" Height="30" FontSize="14"  Text="Код"/> 
+                          <TextBlock x:Name="TypeExamplePad2" Height="18" FontSize="14"  Text="Тип оперционной системы"/> 
+                         <TextBlock x:Name="MemoryExamplePad2" Height="18" FontSize="14"  Text="Объем встроенной памяти "/> 
+                         <TextBlock x:Name="HardMemoryExamplePad2" Height="18" FontSize="14"  Text="Объем оперативной памяти"/>
+                         <TextBlock x:Name="DiagonalExamplePad2" Height="18" FontSize="14"  Text="Диагональ экрна "/> 
+                        <TextBlock x:Name="MatrixExamplePad2" Height="18" FontSize="14"  Text="Тип Матрицы"/> 
+                        
+                    </StackPanel>
+                    <StackPanel Height="199" RenderTransformOrigin="0.5,0.5" Width="335">
+                        <TextBlock x:Name="NameExamplePad2Y" Height="52" FontSize="34"  Text="12"/>
+                        <TextBlock x:Name="CodeExamplePad2Y" Height="30" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="LinExamplePad2Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="MemoryExamplePad2Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="HardMemoryExamplePad2Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="DiagonalExamplePad2Y" Height="18" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="TechnologyExamplePad2Y" Height="18" FontSize="14" Text="12" /> 
+                        
+                    </StackPanel>
+                    <StackPanel Height="192" RenderTransformOrigin="0.5,0.5" Width="126">
+                        <Button x:Name="BuyExamplePad2" Height="62">
+                            <Button.Background>
+                                 <ImageBrush ImageSource="/Images/Korzina.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                </TextBlock>
+            </Paragraph>
+            <Paragraph>
+                <TextBlock Height="213" Width="962">
+                    <Image  x:Name="ExamplePad3" Height="195" Width="287" ></Image>
+                    <StackPanel Height="200" RenderTransformOrigin="0.5,0.5" Width="186">
+                         <TextBlock x:Name="NameExamplePad3" Height="52" FontSize="24"  Text="Название"/>
+                         <TextBlock x:Name="CodeExamplePad3" Height="30" FontSize="14"  Text="Код"/> 
+                          <TextBlock x:Name="TypeExamplePad3" Height="18" FontSize="14"  Text="Тип оперционной системы"/>  
+                         <TextBlock x:Name="MemoryExamplePad3" Height="18" FontSize="14"  Text="Объем встроенной памяти "/> 
+                         <TextBlock x:Name="HardMemoryExamplePad3" Height="18" FontSize="14"  Text="Объем оперативной памяти"/>
+                         <TextBlock x:Name="DiagonalExamplePad3" Height="18" FontSize="14"  Text="Диагональ экрна "/> 
+                       <TextBlock x:Name="MatrixExamplePad3" Height="18" FontSize="14"  Text="Тип Матрицы"/>  
+                        
+                    </StackPanel>
+                    <StackPanel Height="199" RenderTransformOrigin="0.5,0.5" Width="335">
+                        <TextBlock x:Name="NameExamplePad3Y" Height="52" FontSize="34"  Text="12"/>
+                        <TextBlock x:Name="CodeExamplePad3Y" Height="30" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="LinExamplePad3Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="MemoryExamplePad3Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="HardMemoryExamplePad3Y" Height="18" FontSize="14" Text="12" />
+                        <TextBlock x:Name="DiagonalExamplePad3Y" Height="18" FontSize="14" Text="12" /> 
+                        <TextBlock x:Name="TechnologyExamplePad3Y" Height="18" FontSize="14" Text="12" /> 
+                        
+                    </StackPanel>
+                    <StackPanel Height="192" RenderTransformOrigin="0.5,0.5" Width="126">
+                        <Button x:Name="BuyExamplePad3" Height="62">
+                            <Button.Background>
+                                 <ImageBrush ImageSource="/Images/Korzina.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                </TextBlock>
+            </Paragraph>
+        </FlowDocument>
+    </FlowDocumentScrollViewer>
+</Page>

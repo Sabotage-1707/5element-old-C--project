@@ -1,0 +1,31 @@
+﻿<Window x:Class="LAB33_KPIAP.LogIn"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LAB33_KPIAP"
+        mc:Ignorable="d"
+        Icon ="/Images/hnet.com-image.ico"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Title="Приложение Интернет-Магазин 5 элемент" Height="450" Width="580">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/Fon.jpg"/>
+        </Grid.Background>
+        <TextBox Margin="136,96,74,258" x:Name="Login" FontSize="28">
+            
+        </TextBox>
+        <Label Content="Логин" Margin="10,96,438,258" Foreground="White" FontSize="28"> </Label>
+        <PasswordBox Margin="136,166,74,187" x:Name="Pass" FontSize="28">
+            
+        </PasswordBox>
+        <Label Content="Пароль" Margin="10,166,438,187" Foreground="White" FontSize="28"></Label>
+        <Button Margin="165,273,113,96" Content="Войти" FontSize="34" Click="Button_Click"></Button>
+        <Label Margin="258,323,213,60">
+            <Hyperlink Click="Hyperlink_Click">
+                Создать Аккаунт
+            </Hyperlink>
+        </Label>
+    </Grid>
+</Window>
